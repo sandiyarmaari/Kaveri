@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    margin: 10px;
+    height: 95vh;
+    border-radius: 20px;
+    width: 100vw;
+    padding: 50px;
+}
+
+.signup {
+    margin: 50px;
+    margin-top: -10px;
+    padding: 20px;
+    margin-left: 30px;
+    background-color: white;
+    height: 103%;
+    display: block;
+    border-radius: 10px;
+    width: 37vw;
+}
+
+.signup form {
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+}
+
+.signup h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: algerian;
+}
+
+.signup label {
+    font-size: 25px;
+    color: red;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.signup input {
+    margin: 5px;
+    margin-left: 30px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 5px 40px;
+}
+
+.signup input:hover,
+:focus {
+    outline: none;
+}
+
+.signup input::placeholder {
+    font-size: 20px;
+    color: blue;
+}
+
+.signup #cbox {
+    font-size: 15px;
+    color: red;
+}
+
+.signup #signupbtn {
+    margin: 30px;
+    margin-left: 30px;
+    border: none;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 6px 150px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signup #signupbtn:hover {
+    box-shadow: 0px 0px 5px 5px gold;
+}
+
+.signup #signupbtn:focus {
+    transform: translateY(5px);
+    transform: translateY(-5px);
+}
+
+.signup #sendOTP {
+    border: none;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 6px 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.signup #verifyOTP {
+    border: none;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 6px 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.signup #sendOTP:hover {
+    box-shadow: 0px 0px 5px 5px gold;
+}
+
+.signup #verifyOTP:hover {
+    box-shadow: 0px 0px 5px 5px gold;
+}
+
+.signup #sendOTP:focus {
+    transform: translateY(5px);
+}
+
+.signup #verifyOTP:focus {
+    transform: translateY(5px);
+}
+
+.signup h3 {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    margin: 0;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.signup #logbtn {
+    text-decoration: none;
+    color: blue;
+    margin-left: 220px;
+    font-size: 25px;
+    position: absolute;
+    margin-top: -30px;
+    border: none;
+    background: transparent;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+.img-container {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    position: absolute;
+    display: flex;
+    margin-top: -300px;
+    left: 65%;
+}
+
+.img img {
+    height: 87vh;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: -310px;
+    margin-left: -200px;
+}

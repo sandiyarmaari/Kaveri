@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaveri</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup" id="signupform">
+            <h1>Sign Up</h1>
+            <form id="signForm" action="signup.php" method="post">
+
+                <label for="email">E-Mail</label> <br>
+                <input type="text" name="email" id="emailInput" placeholder="Enter E-Mail" required>
+                <button type="button" id="sendOTP" name="send">Send OTP</button><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="pass" id="inputpass" placeholder="Strong Password" required><br>
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox">Show password</label><br>
+
+                <label for="otp">Enter OTP</label><br>
+                <input type="number" name="otp" id="otpInput" placeholder="Enter OTP" required>
+                <button type="button" id="verifyOTP" name="verify">Verify</button><br>
+
+                <button type="submit" id="signupbtn" name="btn">Submit</button><br>
+                <h3>Already Have Account</h3>
+                <a href='/login'><button id="logbtn">Login</button></a>
+            </form>
+        </div>
+    </div>
+    <div class="img-container">
+        <div class="img">
+            <img src="logimg2.jpg">
+        </div>
+    </div>
+    <script src="signup.js">
+    </script>
+</body>
+
+</html>

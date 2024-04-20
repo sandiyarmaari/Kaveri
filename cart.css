@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.nav {
+    background-color: orange;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .logo {
+    background: linear-gradient(to right, rgb(46, 46, 240), lightblue);
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 20px;
+}
+
+.nav .logo a {
+    text-decoration: none;
+}
+
+.logo #kav {
+    margin-left: 150px;
+    margin-top: -30px;
+    color: gold;
+}
+
+.logo #eri {
+    margin-top: -30px;
+    color: white;
+}
+
+.logo img {
+    height: 130px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 5px;
+    position: fixed;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right, lightblue, blue);
+}
+
+.logo h2 {
+    font-size: 50px;
+    font-family: Algerian;
+    color: black;
+    opacity: 1;
+    display: flex;
+    margin-top: 80px;
+}
+
+#search {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 300px;
+    padding: 5px 70px;
+    box-shadow: 0 0 1px 1px black;
+    text-transform: none;
+    outline: none;
+}
+
+#search-inside {
+    color: black;
+    text-decoration: none;
+    margin-top: 45px;
+    margin-left: 150px;
+    font-size: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+#search-inside:hover,
+ :focus {
+    color: blue;
+}
+
+#searchButton {
+    margin-top: 60px;
+    margin-left: 750px;
+    position: fixed;
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+    outline: none;
+}
+
+#search:hover {
+    background-color: rgb(253, 252, 248);
+    outline: none;
+}
+
+.search:hover {
+    color: black;
+}
+
+.logo input::placeholder {
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    color: blue;
+    padding: 0px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+#acc {
+    background-color: rgb(231, 151, 46);
+    height: 26vh;
+    padding: 10px 20px;
+    color: white;
+    width: 15vw;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    margin-left: 1100px;
+    border-radius: 10px;
+    opacity: 1;
+    display: none;
+    z-index: 1;
+}
+
+#acc #acc_btn {
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    margin-top: -1px;
+    margin-left: 120px;
+    border: none;
+    padding: 3px 3px;
+}
+
+#acc ul li {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    margin-top: -10px;
+    text-decoration: none;
+    opacity: 1;
+    list-style: none;
+}
+
+#acc ul li:hover {
+    border-bottom: 1px dashed white;
+    cursor: pointer;
+}
+
+#acc .icon {
+    margin-left: -24px;
+}
+
+.user {
+    color: Blue;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid gold;
+    font-size: 25px;
+    margin-left: 60%;
+    ;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.display {
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 40px;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.display #cart {
+    background-color: white;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}

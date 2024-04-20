@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+body {
+    background-size: cover;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    background-size: cover;
+    padding: 0;
+}
+
+.nav .logo {
+    background: linear-gradient(to right, rgb(46, 46, 240), lightblue);
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-size: cover;
+    padding: 20px;
+}
+
+.nav .logo a {
+    text-decoration: none;
+}
+
+.logo #kav {
+    margin-left: 150px;
+    margin-top: -30px;
+    color: gold;
+}
+
+.logo #eri {
+    margin-top: -30px;
+    color: white;
+}
+
+.logo img {
+    height: 130px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 5px;
+    position: fixed;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right, lightblue, blue);
+}
+
+.logo h2 {
+    font-size: 50px;
+    font-family: Algerian;
+    color: black;
+    opacity: 1;
+    display: flex;
+    margin-top: 80px;
+}
+
+#search {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 470px;
+    padding: 5px 70px;
+    box-shadow: 0 0 1px 1px black;
+    text-transform: none;
+    outline: none;
+    background-size: cover;
+}
+
+.noResultsMsg {
+    display: none;
+}
+
+#search-inside {
+    color: black;
+    text-decoration: none;
+    margin-top: 55px;
+    margin-left: 150px;
+    font-size: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+#search-inside:hover,
+ :focus {
+    color: blue;
+}
+
+#searchButton {
+    margin-top: 60px;
+    margin-left: 750px;
+    position: fixed;
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+    outline: none;
+}
+
+#search:hover {
+    background-color: rgb(253, 252, 248);
+    outline: none;
+}
+
+.search:hover {
+    color: black;
+}
+
+.logo input::placeholder {
+    font-size: 20px;
+    font-family: Gill Sans MT;
+    color: blue;
+    padding: 0px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+.logo .btn {
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+/* Add shake animation */
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+.logo .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo .btn a:hover {
+    color: white;
+}
+
+.btn:hover,
+ :focus {
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 0 5px 5px gold;
+    transition: all 0.2s ease-in-out;
+}
+
+.cart {
+    margin: 2px;
+}
+
+.cart1 {
+    display: none;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 53px;
+    right: 22%;
+    display: block;
+}
+
+.user {
+    color: Blue;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid gold;
+    font-size: 25px;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+#acc {
+    background-color: rgb(231, 151, 46);
+    height: 26vh;
+    padding: 10px 20px;
+    color: white;
+    width: 15vw;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    margin-left: 1100px;
+    border-radius: 10px;
+    opacity: 1;
+    display: none;
+    z-index: 1;
+}
+
+#acc #acc_btn {
+    border-radius: 100%;
+    color: white;
+    background-color: red;
+    margin-top: -1px;
+    margin-left: 120px;
+    border: none;
+    padding: 4px 7px;
+}
+
+#acc ul li {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    margin-top: -10px;
+    text-decoration: none;
+    opacity: 1;
+    list-style: none;
+}
+
+#acc ul li:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+#acc .icon {
+    margin-left: -24px;
+}
+
+.logo #noResultsMsg {
+    font-size: 30px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: fixed;
+    left: 45%;
+    top: 25%;
+    display: none;
+}
+
+.mar {
+    background-color: transparent;
+    margin-top: 200px;
+    margin-left: 20px;
+    padding: 20px 40px;
+    width: 98%;
+}
+
+.mar img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    margin-left: 20px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.mar img:hover {
+    transform: scale(1.1);
+    word-spacing: 10px;
+    justify-content: space-between;
+}
+
+.item {
+    height: 100%;
+    width: 93%;
+    margin: 40px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 50px;
+    position: absolute;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body h1 {
+    color: black;
+    font-size: 40px;
+    margin: 40px;
+    font-family: Algerian;
+}
+
+.item_list {
+    background-color: white;
+    border: 0.5px solid white;
+    padding: 30px;
+    word-spacing: 5px;
+    margin-bottom: 200px;
+    border-radius: 40px;
+    margin-top: -150px;
+    margin-left: 15px;
+    margin-right: 20px;
+    word-spacing: 16px;
+    height: 67vh;
+    width: 20vw;
+    background-size: cover;
+    border: 1px solid rgb(221, 185, 86);
+}
+
+.item_list:hover {
+    border: 1px solid black;
+    transition: all ease 1s;
+}
+
+.item_list img {
+    height: 170px;
+    width: 170px;
+    /* object-fit: cover; */
+    margin: 20px;
+    margin-top: -20px;
+    margin-right: 5px;
+    cursor: pointer;
+    filter: grayscale(25%);
+}
+
+.item_list img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+    filter: contrast(100%);
+}
+
+.item_list h3 {
+    color: Blue;
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.item_list h2 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    margin: 10px;
+    cursor: text;
+}
+
+.item_list h4 {
+    font-size: 25px;
+    color: rgb(34, 85, 85);
+    font-family: Footlight MT;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.item_list p {
+    color: green;
+    text-align: center;
+    font-size: 15px;
+    font-family: Comic Sans MS;
+    margin-right: 0px;
+    cursor: text;
+    text-align: center;
+}
+
+.item_list del {
+    color: red;
+    margin: 2px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.addcart {
+    padding: 2px 4px;
+    margin: 2px;
+    color: blue;
+    border: none;
+    font-size: 20px;
+    margin-right: -2px;
+}
+
+.but {
+    padding: 3px 5px;
+    background-color: gold;
+    margin: 2px;
+    border: 2px solid blue;
+    border-radius: 20%;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+
+#buy {
+    padding: 3px 15px;
+    background-color: gold;
+    margin: 4px;
+    border: 2px solid blue;
+    border-radius: 20%;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+}
+
+.but:hover {
+    border: 1px solid blue;
+    background-color: gold;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px 3px blue;
+    transform: scale(1.1);
+}
+
+#buy:hover {
+    border: 1px solid blue;
+    background-color: gold;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px 3px blue;
+    transform: scale(1.1);
+}
+
+footer {
+    background: radial-gradient(rgb(99, 233, 226), rgb(77, 111, 116));
+    background-size: cover;
+    height: 85vh;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    display: none;
+    padding: 0;
+    top: 600%;
+    margin: 0px;
+}
+
+.foot {
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+    background-size: cover;
+}
+
+.foot .details {
+    display: flex;
+    gap: 20px;
+    margin-top: -20px;
+    padding: 10px;
+    margin-left: 400px;
+    background-size: cover;
+}
+
+.foot .details h3 {
+    display: none;
+}
+
+.details a {
+    text-align: center;
+}
+
+.fa-brands {
+    background-color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 7px;
+    margin: 5px;
+    font-weight: bold;
+    border: 2px solid gold;
+    text-align: center;
+    margin-bottom: -120px;
+    margin-top: 100px;
+    background-size: cover;
+}
+
+.fa-brands:hover {
+    padding: 7px;
+    transform: scale(1.5);
+    border: none;
+}
+
+.kaveri-insta {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-insta:hover {
+    color: rgb(230, 11, 138);
+    border: 3px solid rgb(240, 25, 204);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(248, 9, 121);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-fb {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-fb:hover {
+    color: rgb(11, 9, 134);
+    border: 3px solid rgb(5, 13, 124);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(26, 3, 126);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-twitter {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-twitter:hover {
+    color: rgb(15, 222, 236);
+    border: 3px solid rgb(12, 215, 241);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(5, 124, 221);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-wp {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-wp:hover {
+    color: rgb(52, 236, 16);
+    border: 3px solid rgb(20, 228, 48);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(3, 126, 9);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-yt {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-yt:hover {
+    color: rgb(180, 13, 13);
+    border: 3px solid rgb(211, 9, 9);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(199, 27, 4);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-threads {
+    background-color: white;
+    color: gold;
+    font-size: 30px;
+    border: 2px solid gold;
+    text-decoration: none;
+}
+
+.kaveri-threads:hover {
+    color: rgb(8, 8, 8);
+    border: 3px solid rgb(7, 7, 7);
+    background: white;
+    box-shadow: 0 1px 15px 5px rgb(14, 1, 1);
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.kaveri-footer-section {
+    background: radial-gradient(rgb(62, 59, 59), rgb(0, 0, 0));
+    background-size: cover;
+}
+
+.kaveri-footer-head {
+    color: gold;
+    margin-left: 200px;
+    margin-top: 200px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.kaveri-footer-para {
+    color: white;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.kaveri-footer-para:hover {
+    text-decoration: none;
+}
+
+.kaveri-footer-para:hover {
+    color: black;
+}
+
+.kaveri-footer-icon {
+    color: blue;
+    margin-left: 190px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.kaveri-footer1-head {
+    color: gold;
+    margin-left: 600px;
+    margin-top: -300px;
+    font-size: 24px;
+    font-weight: bo300
+}
+
+.kaveri-footer1-para {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.kaveri-footer1-para:hover {
+    text-decoration: none;
+}
+
+.kaveri-footer1-para:hover {
+    color: black;
+}
+
+.kaveri-footer1-icon {
+    color: blue;
+    margin-left: 580px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.copy {
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: Comic Sans MS;
+    color: black;
+    font-weight: bold;
+}

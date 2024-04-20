@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaveri</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+    <header>
+
+        
+
+
+        <!-- <marquee bgcolor="lightblue" direction="left" loop="10"><i class="fa-solid fa-phone"></i> Toll-Free </marquee> -->
+        <div class="nav">
+            <div class="logo">
+
+                <a href='index.html'><img src="kaveri.jpg"></a>
+                <h2>
+                    <span id="kav">KAV</span>
+                    <span id="eri">ERI</span>
+                </h2>
+                <p id="search-inside">kaveri </p>
+                <input type="text" id="search" oninput="search()" placeholder="Search Something ...."><i class="fa-solid fa-search" id="searchButton"></i>
+
+                <div class="btn" style="display: none;"></div>
+                <button class="btn" id="btn1">
+                     <a href='cart.html'><i class="fa-solid fa-cart-shopping cart"></i>Cart</a>
+
+                        </button>
+
+                <span id="cartCount" class="cart-count"></span>
+
+
+
+                <i class="fa-solid fa-bars user" id="bar"></i>
+
+
+                <div id="noResultsMsg">No results found.</div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div id="acc">
+            <ul>
+                <button id="acc_btn"><i class="fa-solid fa-xmark"></i></button>
+                <li><i class="fa-solid fa-users icon  "></i>&nbsp;&nbsp;&nbsp; Account</li>
+                <li><i class="fa-solid fa-right-from-bracket icon"></i>&nbsp;&nbsp;&nbsp;Sign out</li>
+                <li><i class="fa-solid fa-gear icon"></i>&nbsp;&nbsp;&nbsp;Settings</li>
+            </ul>
+        </div>
+
+
+    </header>
+    <div class="mar">
+        <marquee id="marquee" scrollamount=7 direction="left" loop="20">
+            <img src="vegetable.jpg">
+            <img src="vegetable1.jpg">
+            <img src="vegetable2.jpg">
+            <img src="vegetable3.jpg">
+            <img src="vegetable4.jpg">
+            <img src="vegetable5.jpg">
+
+
+
+        </marquee>
+    </div>
+
+
+    <div class="item">
+
+        <div class="item_list" data-product="tomato">
+            <img src="tomato.jpg">
+            <h3>Tomato</h3>
+            <h2>Price ₹40</h2>
+            <p>₹<del>45</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+           <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="potato">
+            <img src="potato.jpg">
+            <h3>Potato</h3>
+            <h2>Price ₹27</h2>
+            <p>₹<del>30</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="brinjal">
+            <img src="brinjal.jpg">
+            <h3>Brinjal</h3>
+            <h2>Price ₹80</h2>
+            <p>₹<del>90</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="carrot">
+            <img src="carrot.jpg">
+            <h3> carrot</h3>
+            <h2>Price ₹60</h2>
+            <p>₹<del>65</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="pumpkin">
+            <img src="pumpkin.jpg">
+            <h3> Pumpkin</h3>
+            <h2>Price ₹20</h2>
+            <p>₹<del>30</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="onion">
+            <img src="onion.jpg">
+            <h3> Onion</h3>
+            <h2> Price ₹40</h2>
+            <p>₹<del>50</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="radish">
+            <img src="radish.jpg">
+            <h3> Radish</h3>
+            <h2>Price ₹70</h2>
+            <p>₹<del>75</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="lady">
+            <img src="lady.jpg">
+            <h3> Lady finger</h3>
+            <h2>Price ₹60</h2>
+            <p>₹<del>65</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+
+        <div class="item_list" data-product="tomato">
+            <img src="tomato.jpg">
+            <h3>Tomato</h3>
+            <h2>Price ₹20</h2>
+            <p>₹<del>45</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="potato">
+            <img src="potato.jpg">
+            <h3>Potato</h3>
+            <h4>Price ₹55</h4>
+            <p>₹<del>61</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="brinjal">
+            <img src="brinjal.jpg">
+            <h3>Brinjal</h3>
+            <h2>Price ₹40</h2>
+            <p>₹<del>45</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="carrot">
+            <img src="carrot.jpg">
+            <h3> carrot</h3>
+            <h2>Price ₹120</h2>
+            <p>₹<del>130</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="pumpkin">
+            <img src="pumpkin.jpg">
+            <h3> Pumpkin</h3>
+            <h2>Price ₹40</h2>
+            <p>₹<del>50</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()" i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="onion">
+            <img src="onion.jpg">
+            <h3> Onion</h3>
+            <h2>Price ₹70</h2>
+            <p>₹<del>80</del>10% Offer</p>
+            <h4>Quantity 1kg</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="radish">
+            <img src="radish.jpg">
+            <h3> Radish</h3>
+            <h2>Price:₹ 40</h2>
+            <p>₹<del>55</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+        <div class="item_list" data-product="lady">
+            <img src="lady.jpg">
+            <h3> Lady finger</h3>
+            <h2>Price ₹30</h2>
+            <p>₹<del>40</del>10% Offer</p>
+            <h4>Quantity 500g</h4>
+            <button class="but" id="add" onclick="addToCart(this);shake()"><i class="fa-solid fa-cart-plus addcart"></i>Add Cart</button>
+            <button class="but1" id="buy">Buy</button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="details">
+
+
+                <a class="fa-brands fa-square-instagram kaveri-insta" href="#"></a><br>
+                <a class="fa-brands fa-facebook kaveri-fb" href="#"></a><br>
+                <a class="fa-brands fa-twitter kaveri-twitter" href="#"></a><br>
+                <a class="fa-brands fa-whatsapp kaveri-wp" href="#"></a><br>
+                <a class="fa-brands fa-youtube kaveri-yt" href="#"></a><br>
+                <a class="fa-brands fa-threads kaveri-threads" href="#"></a><br>
+
+
+
+
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class=" ml-3 mt-4">
+                <h1 class="kaveri-footer-head mb-3">Contact </h1>
+                <div class="d-flex">
+                    <i class="fa-solid fa-phone kaveri-footer-icon mr-3"></i>
+                    <p class="kaveri-footer-para">+123-456-7890</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-phone kaveri-footer-icon mr-3"></i>
+                    <p class="kaveri-footer-para">+147-258-3698</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-envelope kaveri-footer-icon mr-3"></i>
+                    <p class="kaveri-footer-para">kaverishopping.com</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-map-location-dot kaveri-footer-icon mr-3"></i>
+                    <a class="kaveri-footer-para" href="https://www.google.com/maps/place/Electronic+City,+Bengaluru,+Karnataka/@12.8380004,77.6329977,13z/data=!3m1!4b1!4m6!3m5!1s0x3bae6c8a7750e1c3:0x4a5cfc0fce5af71d!8m2!3d12.8452145!4d77.6601695!16zL20vMDIzbGMx?authuser=0&entry=ttu">
+                        Karnataka, Electronic City
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class=" ml-3 mt-4">
+                <h1 class="kaveri-footer1-head mb-3">Links</h1>
+                <div class="d-flex">
+                    <i class="fa-solid fa-home kaveri-footer1-icon mr-3"></i>
+                    <p class="kaveri-footer1-para">Home</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-globe kaveri-footer1-icon mr-3"></i>
+                    <p class="kaveri-footer1-para">Website</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-user kaveri-footer1-icon mr-3"></i>
+                    <p class="kaveri-footer1-para">Developers</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-arrow-right kaveri-footer1-icon mr-3"></i>
+                    <p class="kaveri-footer1-para">About</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-phone kaveri-footer1-icon mr-3"></i>
+                    <p class="kaveri-footer1-para">Contact</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="copy">
+            <p>&copy; Kaverishopping 2023 &reg;</p>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCartCount();
+
+            // Add event listener for changes in local storage
+            window.addEventListener('storage', function(event) {
+                if (event.key === 'cartCount') {
+                    updateCartCount(parseInt(event.newValue) || 0);
+                }
+            });
+        });
+
+        function addToCart(button) {
+            var productDiv = button.closest('.item_list');
+
+            if (!productDiv) {
+                console.error('Could not find product details.');
+                return;
+            }
+
+            var product = productDiv.getAttribute('data-product');
+            var price = productDiv.querySelector('h2').innerText;
+            var imageSrc = productDiv.querySelector('img').src;
+            var quantity = productDiv.querySelector('h4').innerText;
+
+            var item = {
+                product: product,
+                price: price,
+                image: imageSrc,
+                quantity: quantity
+            };
+
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(item);
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Increment the cart count and update
+            updateCartCount(cart.length);
+
+            alert('Item added to cart!');
+        }
+
+        function initCartCount() {
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCartCount(cart.length);
+        }
+
+        function updateCartCount(count) {
+            var cartCountElement = document.getElementById('cartCount');
+            if (cartCountElement) {
+                cartCountElement.textContent = count;
+                cartCountElement.style.display = count > 0 ? 'block' : 'none';
+            }
+        }
+    </script>
+
+
+
+
+
+
+    <script src="script.js"></script>
+   
+
+
+</body>
+
+</html>
